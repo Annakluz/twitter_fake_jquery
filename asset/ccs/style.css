@@ -1,3 +1,7 @@
+.maxContainer{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+}
 .imglogo{
     width: 20vw;
     height: 10vh;
@@ -9,4 +13,25 @@
 
 .signin{
     padding: 2rem;
+}
+
+.send{
+    background-color: #2499E1;
+    color:white;
+    margin: 1em;
+}
+
+.twittContainer{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.textCara{
+    width: 50vw;
+    height: 30vh;
+    border-radius: 2vh;
+}
+
+.send :hover{
+    
 }

@@ -1,0 +1,19 @@
+.maxContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12.5vh auto; 
+    grid-column-gap: 2vw;
+}
+
+.twittContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row-start: 2;
+    justify-items: center;
+    
+}
+
+.butt{
+    text-align: center;
+}
+
