@@ -1,0 +1,12 @@
+.imglogo{
+    width: 20vw;
+    height: 10vh;
+}
+
+.imglogo>img{
+    width: 100%;
+}
+
+.signin{
+    padding: 2rem;
+}
