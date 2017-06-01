@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+
 	// Envío de To - Do
 	var toDoForm = document.getElementById("twitt-text");
 	toDoForm.addEventListener("submit", function (e) {
@@ -25,4 +25,6 @@ window.addEventListener("load", function () {
 		// Borrar contenido de textarea
 		mensajeContenedor.value = "";
 	});
-});
+
+
+$(document).ready(cargarPagina);
