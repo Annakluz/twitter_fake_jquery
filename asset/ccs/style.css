@@ -29,9 +29,29 @@
 .textCara{
     width: 50vw;
     height: 30vh;
+    font-size: 2rem;
     border-radius: 2vh;
+    padding: 1vh;
 }
 
-.send :hover{
+
+.twittMsj{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+    justify-items: center;   
+}
+
+.comment {
+    width: 30vw;
+    background-color: white;
+    border-radius: 2vh;
+    height: 20vh;
+    font-size: 1.3rem;
+    padding: 1vh;
+    
     
 }
