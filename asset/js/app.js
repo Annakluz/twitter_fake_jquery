@@ -1,22 +1,24 @@
 (function () { //IIFE
 
     var contador = 0;
-    
+
     var cargarPagina = function () {
         $("#twitt-text").submit(agregarTodo);
         $("#text-typo").keyup(validarContenido);
     }
-    
-    var agregarTodo = function(e){
+
+    var agregarTodo = function (e) {
         e.preventDefault();
-        
-         var $contenedor = $("#posts");
+
+        var $contenedor = $("#posts");
         var $mensajeContenedor = $("#text-typo");
         var $botonAgregar = $("#send");
         var mensaje = $mensajeContenedor.val();
 
         // Creamos elementos
-        var $postContenedor = $("<article/>", { "class": "comment" });
+        var $postContenedor = $("<article/>", {
+            "class": "comment"
+        });
         var $post = $("<p/>").append(mensaje);
 
         // Personalizamos elementos
@@ -30,22 +32,25 @@
 
         // Borrar contenido de textarea
         mensajeContenedor.value = "";
-        $botonAgregar.attr("disabled" , true);
-        
-        
-        
+        $botonAgregar.attr("disabled", true);
+
+
+    }
+
+    var validar = function () {
+        var $botonAgregar = $("#send");
+        if ($(this).val().trim().length <= 0) {
+            $botonAgregar.attr("disabled", true);
+        }else{
+            $botonAgregar.removeAttr("disabled");
+        }
     }
 
 
-    // Envío de To - Do
-   /* var toDoForm = document.getElementById("twitt-text");
-    toDoForm.addEventListener("submit", function (e) {
-        e.preventDefault();*/
-        // Obtenemos datos
-       
 
 
-    
+
+
 
 
 
